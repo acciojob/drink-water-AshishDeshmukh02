@@ -1,1 +1,64 @@
 /*  your css code here. If applicable */
+body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h1, h3 {
+			text-align: center;
+		}
+		.cup {
+			width: 200px;
+			height: 300px;
+			margin: 0 auto;
+			position: relative;
+			border: 2px solid #333;
+			border-radius: 15px;
+			background-color: #eee;
+		}
+		.cup .remained, .cup .percentage {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.cup .percentage {
+			font-size: 36px;
+			font-weight: normal;
+			color: #666;
+		}
+		.cup-small {
+			width: 50px;
+			height: 50px;
+			border: 2px solid #333;
+			border-radius: 50%;
+			background-color: #eee;
+			margin: 10px auto;
+			cursor: pointer;
+		}
+		.cup-small.full {
+			background-color: #0f9d58;
+		}
+		.cups {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 800px;
+			margin: 0 auto;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.text {
+			text-align: center;
+			margin: 20px 0;
+		}
